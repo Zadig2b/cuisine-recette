@@ -68,7 +68,6 @@ textarea:hover {
   border-color: hsl(169, 82%, 27%); /* green 600 */
 }
 
-
 textarea {
   resize: vertical;
   min-height: 100px;
@@ -97,11 +96,9 @@ fieldset div {
   width: 100%;
 }
 
-input[type="text"]{
-    width: 100%;
+input[type="text"] {
+  width: 100%;
 }
-
-
 
 /* Error and Validation */
 span {
@@ -138,18 +135,18 @@ button[type="submit"]:hover {
 }
 
 #names {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .queries {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .consent-div {
-    display: inline;
+  display: inline;
 }
 
 /* Attribution */
@@ -163,7 +160,8 @@ button[type="submit"]:hover {
   color: hsl(228, 45%, 44%);
 }
 
-input, textarea,
+input,
+textarea,
 button[type="submit"],
 label {
   cursor: pointer;
@@ -173,5 +171,14 @@ label {
 @media (max-width: 600px) {
   form {
     padding: 1.5rem;
+  }
+  .queries {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #names {
+    display: flex;
+    flex-direction: column;
   }
 }
